@@ -34,5 +34,5 @@ function saveResult (tellCroatia) {
 }
 
 
-saveSentence(tellCroatia());
+saveResult(tellCroatia());
  tellCroatia()
