@@ -1,4 +1,5 @@
 
+const fs = require('fs');
 
 function tellCroatia(){
     
@@ -24,4 +25,14 @@ function tellCroatia(){
 
  }
 
+function saveResult (tellCroatia) {
+    fs.writeFile(process.cwd() + '/tellCroatia.txt', sentence  + '\r\n', {flag: 'a'}, err => {
+        if (err) {
+            console.error(err);
+        }
+    })
+}
+
+
+saveSentence(tellCroatia());
  tellCroatia()
